@@ -23,6 +23,7 @@ June and September.
 Daily observed streamflow at the Kusum hydrological station was used
 as the prediction target, with satellite precipitation and meteorological
 datasets used as input variables.
+![Model Performance](figures/Study Area.png)
 
 ### Data
 
@@ -36,8 +37,7 @@ The modelling framework uses:
 
 **Study period:** 2003–2019
 
-The raw input dataset is not included in this repository. Information about
-the data sources and data preparation is provided in `data/README.md`.
+The raw input dataset is not included in this repository. 
 
 ### Feature Engineering
 
@@ -123,11 +123,11 @@ hydrological regime.
 
 Model performance was evaluated using:
 
-- R² — coefficient of determination
-- NSE — Nash–Sutcliffe Efficiency
-- KGE — Kling–Gupta Efficiency
-- RMSE — Root Mean Square Error
-- MAE — Mean Absolute Error
+- R² :- coefficient of determination
+- NSE :- Nash–Sutcliffe Efficiency
+- KGE :- Kling–Gupta Efficiency
+- RMSE :- Root Mean Square Error
+- MAE :- Mean Absolute Error
 
 ### Results
 
@@ -181,10 +181,6 @@ west-rapti-streamflow-ml-ensemble/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-│
-├── data/
-│   └── README.md
-│
 ├── src/
 │   └── streamflow_prediction.py
 │
