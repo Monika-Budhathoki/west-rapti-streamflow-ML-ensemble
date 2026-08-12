@@ -23,7 +23,7 @@ June and September.
 Daily observed streamflow at the Kusum hydrological station was used
 as the prediction target, with satellite precipitation and meteorological
 datasets used as input variables.
-![Model Performance](figures/Study Area.jpg)
+![Study Area](figures/Study Area.jpg)
 
 ### Data
 
