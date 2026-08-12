@@ -23,7 +23,7 @@ June and September.
 Daily observed streamflow at the Kusum hydrological station was used
 as the prediction target, with satellite precipitation and meteorological
 datasets used as input variables.
-![Study Area](figures/Study Area.jpg)
+![Study Area](figures/Study_Area.jpg)
 
 ### Data
 
@@ -160,35 +160,25 @@ Model performance was evaluated using:
 
 ### Observed vs. Predicted Streamflow
 
-The scatter plots below compare observed and predicted streamflow during the
-independent 2017–2019 test period.
+The scatter plots during the 2017–2019 test period shows a strong agreement between observed and predicted streamflow for low to moderate flow conditions. However, the models generally underestimate the largest observed streamflow values, indicating limited ability to reproduce extreme flood peaks during the test period.
 
 ![Observed vs Predicted Streamflow](figures/observed_vs_predicted.png)
 
 ### Hydrograph Comparison
 
-The hydrograph comparison illustrates how the models reproduce the temporal
-dynamics of streamflow, including low flow conditions, rising limbs,
-recession periods, and high-flow events.
+The hydrograph comparison illustrates the ability of the models to reproduce the overall temporal dynamics of streamflow, including low flow conditions, rising limbs, and recession periods. However, the models generally underestimate the magnitude of the most extreme high flow events, particularly the largest observed peaks during the monsoon period.
 
 ![Hydrograph Comparison](figures/hydrograph_independent_test.png)
 
 ### Repository Structure
 
-```text
-west-rapti-streamflow-ml-ensemble/
-│
+west-rapti-streamflow-ml/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-├── src/
-│   └── streamflow_prediction.py
-│
-├── results/
-│   ├── final_test_performance.csv
-│   └── final_test_predictions.csv
-│
+├── streamflow_prediction.py
 └── figures/
-    ├── model_performance_independent_test.png
+    ├── Study_Area.jpg
+    ├── model_performance.png
     ├── observed_vs_predicted.png
-    └── hydrograph_independent_test.png
+    └── hydrograph.png
